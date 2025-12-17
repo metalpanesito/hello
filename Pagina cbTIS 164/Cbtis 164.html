@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Preparatoria Moderna — Educación de calidad, innovación y crecimiento personal.">
+  <title>CBTIS 164</title>
+  <link rel="icon" type="image/png" href="logocbtis.png">
+  <link rel="stylesheet" href="cbtis164.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-titulo">
+      <img src="logocbtis2.png" alt="Logo CBTIS">
+      <h1>CBTis 164</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#carreras">Carreras</a>
+      <a href="#clubes">Clubes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="slider">
+      <img src="cbtis164-1.jpeg" alt="Imagen 1" class="slide active">
+      <img src="cbtis164-2.jpeg" alt="Imagen 2" class="slide">
+      <img src="cbtis164-3.jpeg" alt="Imagen 3" class="slide">
+    </div>
+    <div class="hero-content">
+      <h2>Forma tus estudios con nosotros</h2>
+      <p>Educación de calidad, compromiso y crecimiento personal para preparar a los líderes del mañana.</p>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2 class="section-title" style="color:#990000;">Sobre Nosotros</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      En <strong>CBTis 164</strong> creemos en una educación integral que combina conocimiento académico,
+      valores humanos y habilidades tecnológicas. Nuestra misión es formar estudiantes capaces de enfrentar los
+      desafíos del mundo actual con inteligencia, empatía y liderazgo.
+    </p>
+
+    <div style="text-align:center; margin:40px 0;">
+      <h2 style="color:#990000;">📍 Nuestra Ubicación</h2>
+      <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29534.210868158414!2d-97.86089681817882!3d22.28645994735454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f9a157bb6b1b%3A0xd3ce952439feb9ae!2sCBTis%20No.%20164%20%22Emilio%20Portes%20Gil%22!5e0!3m2!1ses-419!2smx!4v1760494908021!5m2!1ses-419!2smx"
+         width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+         referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="carreras">
+    <h2 class="section-title" style="color:#990000;">Nuevas Carreras</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="aduanas2.jpg" alt="Comercio Internacional">
+        <h3 style="color:#990000;"><center>Comercio Internacional y Aduanas</center></h3>
+        <p><center>Formamos técnicos capaces de apoyar en la planeación, coordinación y evaluación de procesos de importación, exportación y comercio internacional.</center></p>
+      </div>
+      <div class="card">
+        <img src="ecommerce.jpg" alt="E-commerce">
+        <h3 style="color:#990000;"><center>E-commerce</center></h3>
+        <p><center>Desarrolla tus habilidades comunicativas, pensamiento crítico y comprensión social. Perfecto para futuros líderes del mundo digital.</center></p>
+      </div>
+      <div class="card">
+        <img src="soielectrodde.png" alt="Electromovilidad">
+        <h3 style="color:#990000;"><center>Electromovilidad</center></h3>
+        <p><center>Combina teoría y práctica con enfoque en programación, robótica y diseño digital. Prepárate para el futuro tecnológico.</center></p>
+      </div>
+    </div>
+  </section>
+
+  <center><a href="carreras.html" class="boton">Todas las carreras</a></center>
+
+  <section id="clubes">
+    <center><h2 style="color:#990000;" class="section-title">Clubes</h2></center>
+    <div class="cards">
+      <div class="card">
+        <img src="fotografia.jpg" alt="club1">
+        <h3 style="color:#990000;"><center>Fotografía</center></h3>
+        <p><center>Captura momentos y desarrolla tu creatividad con técnicas visuales.</center></p>
+      </div>
+      <div class="card">
+        <img src="futbol.jpg" alt="club2">
+        <h3 style="color:#990000;"><center>Fútbol</center></h3>
+        <p><center>Mejora tu trabajo en equipo y desempeño físico.</center></p>
+      </div>
+      <div class="card">
+        <img src="emprendimiento.jpg" alt="club3">
+        <h3 style="color:#990000;"><center>Emprendimiento</center></h3>
+        <p><center>Crea ideas innovadoras y proyectos propios.</center></p>
+      </div>
+    </div>
+  </section>
+
+  <center><a href="Clubes.html" class="boton">Todos los clubes</a></center>
+
+  <footer id="contacto">
+    <p><strong>CBTis 164</strong></p>
+    <p>📍 20 de Noviembre 301, Ampliacion Unidad Nacional 89510 CD Madero, Tamaulipas</p>
+    <p>📞 (833) 211 2327 | ✉️</p>
+    <p>Horario de atención al público: 7am a 8pm de lunes a viernes</p>
+  </footer>
+
+  <script>
+    let slides = document.querySelectorAll('.slider .slide');
+    let current = 0;
+    function showNextSlide() {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }
+    setInterval(showNextSlide, 4000);
+  </script>
+</body>
+</html>
+
